@@ -1,0 +1,566 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* @font-face {
+    font-family: Newton HOWARD;
+    src: url(../recursos/Newton\ Howard\ Font.otf);
+} */
+
+/* HEADER */
+
+.buton:hover {
+	color: white;
+}
+
+.header_a {
+	display: flex;
+	align-items: center;
+}
+
+.h1_header {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: rgb(60, 21, 78);
+	align-items: center;
+}
+
+.nav_header {
+	flex-wrap: wrap;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: rgb(60, 21, 78);
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.ul_nav {
+	align-items: flex-end;
+	display: flex;
+	list-style-type: none;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+li {
+	display: flex;
+	list-style-type: none;
+	padding: 0.75rem;
+}
+
+/* HEADER */
+
+.p_index {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	flex-wrap: wrap;
+	color: rgb(60, 21, 78);
+	background-color: rgb(177, 199, 244);
+	margin: 50px;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	padding: 30px;
+	border: solid;
+	border-color: rgb(0, 0, 0);
+	box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+		0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+	font-size: 3rem;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	display: flex;
+	background-color: blueviolet;
+	align-items: center;
+	justify-content: center;
+	color: rgb(255, 255, 255);
+	padding: 0.25rem;
+}
+
+.img_gamersport {
+	padding: 1rem;
+}
+
+.subheading {
+	font-size: 2rem;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	display: flex;
+	background-color: blueviolet;
+	align-items: center;
+	justify-content: center;
+	color: rgb(255, 255, 255);
+}
+
+.section_index {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	/* background-image: url(../recursos/smooth-purple.jpg); */
+}
+
+.div_index {
+	text-align: center;
+}
+
+.div_indexfondo {
+	text-align: center;
+}
+
+.main_index{
+	padding: 1rem;
+}
+
+.main-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: calc(100vh - 85px - 64px);
+	padding: 1rem;
+}
+
+.video_index {
+	padding: 30px;
+}
+
+.paragraph_noticias {
+	display: flex;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(60, 21, 78);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-transform: capitalize;
+}
+
+.p_consultas{
+	font-size: 1.20rem;
+}
+
+.form_consultas {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 400px;
+	flex-direction: column;
+	background-color: rgb(177, 199, 244);
+	padding: 1rem;
+	margin: auto;
+	gap: 1rem;
+	border-radius: 4px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: rgb(60, 21, 78);
+}
+
+.form_consultas_work {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.form_insc {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 300px;
+	background-color: rgb(177, 199, 244);
+	padding: 30px;
+	margin: auto;
+	margin-bottom: 100px;
+	margin-top: 50px;
+	border-radius: 4px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: rgb(71, 31, 87);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+		0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+.div_inscripciones {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.input_form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: aliceblue;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 18px;
+	text-transform: capitalize;
+}
+
+.but_consultas {
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	background-color: lightgreen;
+	border-radius: 10px;
+}
+
+.div_consultas {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.input_consultas {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	width: 100%;
+	background-color: lightcoral;
+	border-radius: 10px;
+}
+
+.juegos_para_competir {
+	background-color: rgb(228, 236, 193);
+	padding: 1rem 1rem 3rem 1rem;
+	border-radius: 30px;
+	border-style: solid;
+	max-width: 350px;
+	border-color: rgb(87, 83, 38);
+	box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+		0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 11px 15px -7px rgba(0, 0, 0, 0.2);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagen_tamaño {
+	width: 100%;
+}
+
+.secciones_juegos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 1rem;
+	gap: 1rem;
+	align-items: stretch;
+}
+
+.h3_juegos {
+	align-items: center;
+	display: flex;
+	padding: 0.5rem;
+	background-color: rgb(48, 48, 51);
+	color: white;
+	justify-content: center;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+.div_form1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* grid */
+
+.container_grid {
+	display: grid;
+	grid-template-rows: repeat(6, 150px);
+	gap: 15px;
+	margin: 20px;
+	grid-template-areas:
+		'a b b c'
+		'a d e c'
+		'a d e c'
+		'f g h i'
+		'f g h i'
+		'f g h i';
+}
+
+.grid_item {
+	border-radius: 5px;
+	border: solid;
+	border-color: white;
+	box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+		0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 11px 15px -7px rgba(0, 0, 0, 0.2);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: white;
+}
+
+.grid_text {
+	font-size: large;
+	background-color: rgb(72, 69, 69);
+	color: white;
+	display: flex;
+	border-radius: 5px;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.grid_uno {
+	grid-area: a;
+	background-image: url(../recursos/ghk-remera.png);
+	background-size: contain;
+	display: flex;
+	align-items: flex-end;
+}
+
+.grid_dos {
+	grid-area: d;
+	background-image: url(../recursos/teclado2-imagen-tienda.jpg);
+	background-size: contain;
+	display: flex;
+	align-items: flex-end;
+}
+
+.grid_tres {
+	grid-area: b;
+	display: flex;
+	align-items: flex-end;
+}
+
+.grid_cuatro {
+	grid-area: c;
+	background-image: url(../recursos/alpha-remera.webp);
+	background-size: contain;
+	display: flex;
+	align-items: flex-end;
+}
+
+.grid_cinco {
+	grid-area: e;
+	background-image: url(../recursos/teclado2-imagen-tienda.jpg);
+	background-size: contain;
+	display: flex;
+	align-items: flex-end;
+}
+
+.grid_seis {
+	grid-area: f;
+	background-image: url(../recursos/godelite-remera.webp);
+	background-size: contain;
+	display: flex;
+	align-items: flex-end;
+}
+
+.grid_siete {
+	grid-area: g;
+
+	background-image: url(../recursos/ghk-remera.png);
+	background-size: contain;
+	display: flex;
+	align-items: flex-end;
+}
+
+.grid_ocho {
+	grid-area: h;
+
+	background-image: url(../recursos/alpha-remera.webp);
+	background-size: contain;
+	display: flex;
+	align-items: flex-end;
+}
+
+.grid_nueve {
+	grid-area: i;
+	background-image: url(../recursos/godelite-remera.webp);
+	background-size: contain;
+	display: flex;
+	align-items: flex-end;
+}
+
+/* grid */
+
+/* BODY */
+
+header {
+	position: relative;
+	display: flex;
+	background-color: rgb(177, 199, 244);
+	padding: 1rem;
+}
+
+body {
+	background-color: rgb(191, 156, 224);
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* BODY */
+
+/* footer */
+
+.footer_class {
+	background-color: rgb(177, 199, 244);
+	max-width: 100%;
+	margin-top: auto;
+}
+
+.ul_class {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.p_ul {
+	display: flex;
+	padding: 0.5rem;
+	color: rgb(255, 255, 255);
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgb(55, 51, 51);
+	border-radius: 200px;
+	border: solid;
+	border-color: blueviolet;
+	align-items: center;
+	justify-content: center;
+}
+
+.img_footer:hover {
+	background-color: rgb(93, 113, 151);
+}
+
+.img_footer {
+	background-color: rgb(158, 177, 214);
+	height: 1rem;
+	width: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.num_footer {
+	font-style: oblique;
+	margin-right: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-size: small;
+}
+
+.p_footer {
+	font-size: 1rem;
+	color: rgb(71, 31, 87);
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	justify-content: center;
+	background-color: rgb(165, 182, 218);
+}
+
+/* footer */
+
+/* responsive
+
+media querie
+min-width >ancho minimo
+max width > ancho maximo de la pantalla/dispositivo 
+
+
+medidas relativas
+rem -- es una medida estandar que se multiplica 
+y toma de base el tmaño minimmo de la letra del
+dispositivo ( 32- 1 REM = 32PX) ( 12PX 1 rem = 12PX)
+
+EM -- toma de mase el tamaño minimo de la M del dispositivo
+PORCENTAJES -- Son las mas faciles, menos recomendadas
+1 rem es entre 12 px - 16 px
+cambiar width % por vw view width
+cambiar height % por vh view height
+grid usar fr no px
+*/
+
+/* tablet */
+@media (min-width: 541px) and (max-width: 720px) {
+	/* los cambios estructurales */
+}
+
+/* celular   */
+@media (max-width: 720px) {
+	/* los cambios estructurales */
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+	.ul_nav{
+		font-size: 0.80rem;
+	}
+	.heading {
+		font-size: 1.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.p_index {
+		font-size: 1rem;
+		margin: 1rem;
+		width: 18rem;
+	}
+	.img_gamersport {
+		width: 20rem;
+		height: 15rem;
+	}
+	.video_index {
+		width: 300px;
+		height: 200px;
+	}
+	.img-header {
+		display: none;
+	}
+	.nav_header {
+		justify-content: center;
+	}
+	.header_a {
+		display: flex;
+		justify-content: center;
+	}
+	.ul_class {
+		justify-content: center;
+	}
+	.main-content {
+		min-height: calc(100vh - 89px - 64px);
+	}
+	.secciones_juegos {
+		padding: 2rem;
+		gap: 1.5rem;
+	}
+	.container_grid {
+		grid-template-areas:
+			'a'
+			'b'
+			'c'
+			'd'
+			'e'
+			'f'
+			'g'
+			'h'
+			'i';
+	grid-template-rows: repeat(9, 300px);
+	}
+	.p_footer{
+		font-size: 0.75rem;
+	}
+	.p_ul{
+		font-size: 0.50rem;
+	}
+}

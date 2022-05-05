@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../recursos/pluma.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Css/estilos.css">
+    <script src="https://kit.fontawesome.com/a3f5228cd9.js" crossorigin="anonymous"></script>
+    <title>Gamersport</title>
+</head>
+<body>
+    <header>
+        <a class="header_a" href="../index.html" ><h1 class="h1_header">GAMERSPORT</h1></a> 
+            <nav class="nav_header">   
+                <ul class="ul_nav">
+                    <li><a class="buton" href="../index.html">Inicio</a></li>
+                    <li><a class="buton" href="juegos.html">Juegos </a></li>
+                    <li><a class="buton" href="inscripciones.html">Inscripciones</a></li>
+                    <li><a class="buton" href="tienda.html">Tienda</a></li>
+                    <li><a class="buton" href="consultas.html">Consultas</a></li>
+                </ul>
+                <a class="img-header" href="../index.html"><img src="../recursos/pluma.png" alt="logo imagen"></a>
+            </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="heading">INSCRIBITE</h2>
+            <form method="post" class="form_insc" >
+                <div class="div_inscripciones">
+                    <label for="juegos">¿En que juego vas a competir?</label>
+                    <select name="juegos" id="juegos">
+                        <option value="league">League Of Legends</option>
+                        <option value="csgo">Counter strike global offensive</option>
+                        <option value="battlefield">Battlefield</option>
+                        <option value="cod">Call Of Duty</option>
+                    </select>
+                </div>
+                <div class="div_inscripciones">
+                    <label for="region">¿De que region eres?</label><!-- le puse una p para q quede orientado horizontalmente aunque no se si esta bien hecho semantiamente, lo dejare asi hasta ver css y arreglarlo -->
+                    <select name="region" id="region">
+                        <option value="na">America del Norte</option>
+                        <option value="sa">America del Sur</option>
+                         <option value="eu">Europa</option>
+                        <option value="oceania">Oceanía</option>
+                        <option value="asia">Asia</option>
+                    </select>
+                </div>
+                <div class="div_inscripciones">
+                    <p>Datos necesarios para inscribirse:</p>
+                    <input type="text" placeholder="Nombe y Apellido" required>
+                    <input type="number" placeholder="DNI N°" required>
+                    <input type="email" placeholder="ejemplo@gmail.com" required>
+                    <p><button type="submit">Envíar inscripción</button></p><!-- le puse una p para q quede orientado horizontalmente aunque no se si esta bien hecho semantiamente, lo dejare asi hasta ver css y arreglarlo -->
+                </div>   
+            </form>
+        </section>
+        <section>
+            <div>
+                <h3 class="subheading">CRONOGRAMA DE INICIO DE TORNEOS</h3>
+            </div>
+            <div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer_class">
+        <ul class="ul_class">
+            <li>
+                <p class="p_ul">Contactenos en nuestras redes:</p>
+            </li>
+            <li class="img_footer">
+                <a href="https://twitter.com/ESL">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li class="img_footer">
+                <a href="https://www.instagram.com/eslgaming/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li class="img_footer">
+                <a href="https://www.facebook.com/ESL/" target="_blank">
+                    <i class="fa-brands fa-facebook-f "></i>
+                </a>
+            </li>
+            <li class="img_footer">
+                <a href="tel:3514-7285">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="p_footer">Gamersports © | 2022 | Todos los derechos reservados</p>
+</footer>     
+</body>
+</html>

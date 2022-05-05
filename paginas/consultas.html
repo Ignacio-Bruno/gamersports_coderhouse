@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../recursos/pluma.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Css/estilos.css">
+    <script src="https://kit.fontawesome.com/a3f5228cd9.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a class="header_a" href="../index.html" ><h1 class="h1_header">GAMERSPORT</h1></a> 
+            <nav class="nav_header">   
+                <ul class="ul_nav">
+                    <li><a class="buton" href="../index.html">Inicio</a></li>
+                    <li><a class="buton" href="juegos.html">Juegos</a></li>
+                    <li><a class="buton" href="inscripciones.html">Inscripciones</a></li>
+                    <li><a class="buton" href="tienda.html">Tienda</a></li>
+                    <li><a class="buton" href="consultas.html">Consultas</a></li>
+                </ul>
+                <a class="img-header" href="../index.html"><img src="../recursos/pluma.png" alt="logo imagen"></a>
+            </nav>
+    </header>
+    <main class="main-content">
+        <section class="form_consultas">
+            <div class="div_consultas">
+                <h2>CONSULTAS</h2>
+                <p>¿Tiene dudas o consultas?</p>
+                <p class="p_consultas">Por favor, déjenos su mensaje y le responderemos a la brevedad.</p>
+            </div>
+            <div>
+            <form class='form_consultas_work' action="POST">
+                        <!-- comente los labels porque estoy en la duda si sería redundante ya que use placeholders. -->
+                        <!-- <label for="Motivo de consulta">Motivo de consulta</label>-->
+                        <input class="input_form" type="text" placeholder="Motivo de consulta" required>
+                        <!-- <label for="Nombre y apellido">Nombre y Apellido</label> -->
+                        <input class="input_form" type="text" placeholder="Nombre y Apellido" required>
+                        <!-- <label for="DNI">DNI N°</label> -->
+                        <input class="input_form" type="number" placeholder="DNI N°" required>
+                        <!-- <label for="ejemplo@gmail.com">Email</label> -->
+                        <input class="input_form" type="email" placeholder="ejemplo@gmail.com" required>
+                        <!-- <label for="celular">N° celular</label> -->
+                        <input class="input_form" type="tel" placeholder="celular" required>
+                        <!-- <label for="consulta">Dejenos su consulta:</label> -->
+                        <textarea class="input_form" name="Dejenos su consulta" placeholder="Dejenos su consulta" cols="30" rows="10"></textarea>
+                        <button class="but_consultas" type="submit">Envíar</button>
+                        <input class="input_consultas" type="reset" value="Borrar">
+            </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer_class">
+        <ul class="ul_class">
+            <li>
+                <p class="p_ul">Contactenos en nuestras redes:</p>
+            </li>
+            <li class="img_footer">
+                <a href="https://twitter.com/ESL">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li class="img_footer">
+                <a href="https://www.instagram.com/eslgaming/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li class="img_footer">
+                <a href="https://www.facebook.com/ESL/" target="_blank">
+                    <i class="fa-brands fa-facebook-f "></i>
+                </a>
+            </li>
+            <li class="img_footer">
+                <a href="tel:3514-7285">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="p_footer">Gamersports © | 2022 | Todos los derechos reservados</p>
+</footer>  
+</body>
+</html>
