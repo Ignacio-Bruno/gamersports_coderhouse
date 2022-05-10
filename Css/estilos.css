@@ -63,7 +63,7 @@ li {
 	display: flex;
 	flex-direction: column;
 	width: 500px;
-	padding: 30px;
+	padding: 1.5rem;
 	border: solid;
 	border-color: rgb(0, 0, 0);
 	box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
@@ -83,11 +83,11 @@ li {
 }
 
 .img_gamersport {
-	padding: 1rem;
+	padding: 0.5rem;
 }
 
 .subheading {
-	font-size: 2rem;
+	font-size: 1.75rem;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
 		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	display: flex;
@@ -125,7 +125,9 @@ li {
 }
 
 .video_index {
-	padding: 30px;
+	padding: 1.5rem;
+	width: 860px; 
+	height: 515px;
 }
 
 .paragraph_noticias {
@@ -317,6 +319,16 @@ a {
     padding: 0.5rem;
 }
 
+.grid_textv2 {
+	font-size: large;
+	background-color: rgb(72, 69, 69);
+	color: white;
+	display: flex;
+	border-radius: 5px;
+    padding: 0.5rem;
+	max-width: fit-content;
+}
+
 .grid_uno {
 	grid-area: a;
 	background-image: url(../recursos/ghk-remera.png);
@@ -335,6 +347,8 @@ a {
 
 .grid_tres {
 	grid-area: b;
+	background-image: url(../recursos/auriculares.png);
+	background-size: contain;
 	display: flex;
 	align-items: flex-end;
 }
@@ -365,7 +379,6 @@ a {
 
 .grid_siete {
 	grid-area: g;
-
 	background-image: url(../recursos/ghk-remera.png);
 	background-size: contain;
 	display: flex;
@@ -374,7 +387,6 @@ a {
 
 .grid_ocho {
 	grid-area: h;
-
 	background-image: url(../recursos/alpha-remera.webp);
 	background-size: contain;
 	display: flex;
@@ -390,6 +402,79 @@ a {
 }
 
 /* grid */
+
+/* grid  GANADORES*/
+
+.imagen_grid{
+	padding: 2rem;
+	width: 235px;
+	height: 312;
+}
+
+.div_cajas{
+	
+}
+
+.p_lol_grid{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: bold;
+	color: white;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.p_vlol{
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.grid_ganadores{
+	display: grid;
+	grid-template-rows: repeat(4, 150px);
+	grid-template-columns: repeat(3, 300px);
+	justify-content: center;
+	gap: 3rem;
+	margin: 20px;
+	grid-template-areas: 
+		'gan_a gan_b gan_c'
+		'gan_a gan_b gan_c'
+		'gan_d gan_e gan_f'
+		'gan_d gan_e gan_f'
+}
+
+.ganador_a{
+	grid-area: gan_a;
+	background-color: rgba(3, 0, 5, 0.274);
+}
+
+.ganador_b{
+	grid-area: gan_b;
+	background-color: rgba(3, 0, 5, 0.274);
+}
+
+.ganador_c{
+	grid-area: gan_c;
+	background-color: rgba(3, 0, 5, 0.274);
+}
+
+.ganador_d{
+	grid-area: gan_d;
+	background-color: rgba(3, 0, 5, 0.274);
+}
+
+.ganador_e{
+	grid-area: gan_e;
+	background-color: rgba(3, 0, 5, 0.274);
+}
+
+.ganador_f{
+	grid-area: gan_f;
+	background-color: rgba(3, 0, 5, 0.274);
+}
+
+/* grid  GANADORES*/
 
 /* BODY */
 
@@ -492,12 +577,63 @@ grid usar fr no px
 
 /* tablet */
 @media (min-width: 541px) and (max-width: 720px) {
-	/* los cambios estructurales */
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+	.img-header {
+		display: none;
+	}
+	.ul_nav{
+		font-size: 1.5rem;
+	}
+	.nav_header {
+		justify-content: center;
+	}
+	.header_a {
+		display: flex;
+		justify-content: center;
+	}
+	.ul_class {
+		justify-content: center;
+	}
+	.video_index {
+		width: 600px;
+		height: 400px;
+	}
+	.p_footer{
+		font-size: 1.25rem;
+	}
+	.p_ul{
+		font-size: 1rem;
+	}
+	.grid_ganadores{
+		grid-template-areas: 
+			'gan_a gan_b'
+			'gan_c gan_d'
+			'gan_e gan_f';
+	grid-template-rows: repeat(3, 350px) ;
+	grid-template-columns: repeat(2,300px);
+	}
+	.container_grid {
+		justify-content: center;
+		grid-template-areas:
+			'a i'
+			'a i'
+			'c d'
+			'c d'
+			'e f'
+			'e f'
+			'g h'
+			'g h'
+			'b b' ;
+	grid-template-rows: repeat(9, 300px);
+	grid-template-columns: repeat(2, 300px);
+	}
 }
 
 /* celular   */
-@media (max-width: 720px) {
-	/* los cambios estructurales */
+@media (max-width: 540px) {
 	header {
 		display: flex;
 		flex-direction: column;
@@ -511,9 +647,12 @@ grid usar fr no px
 		align-items: center;
 		justify-content: center;
 	}
+	.subheading{
+		margin: 1rem;
+	}
 	.p_index {
 		font-size: 1rem;
-		margin: 1rem;
+		margin: 0.5rem;
 		width: 18rem;
 	}
 	.img_gamersport {
@@ -562,5 +701,16 @@ grid usar fr no px
 	}
 	.p_ul{
 		font-size: 0.50rem;
+	}
+	.grid_ganadores{
+		grid-template-areas: 
+			'gan_a'
+			'gan_b'
+			'gan_c'
+			'gan_d'
+			'gan_e'
+			'gan_f';
+	grid-template-rows: repeat(6, 350px) ;
+	grid-template-columns: auto;
 	}
 }
