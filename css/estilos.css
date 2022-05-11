@@ -52,6 +52,10 @@ li {
 
 /* HEADER */
 
+.img-header:hover {
+	transform: scale(1.2);
+}
+
 .p_index {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
 		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -217,6 +221,7 @@ a {
 	background-color: lightgreen;
 	border-radius: 10px;
 }
+
 
 .div_consultas {
 	display: flex;
@@ -411,9 +416,6 @@ a {
 	height: 312;
 }
 
-.div_cajas{
-	
-}
 
 .p_lol_grid{
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -486,7 +488,8 @@ header {
 }
 
 body {
-	background-color: rgb(191, 156, 224);
+	background: rgb(155,8,149);
+	background: linear-gradient(141deg, rgba(155,8,149,1) 0%, rgba(178,133,206,1) 46%, rgba(114,52,152,1) 100%);	
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -556,24 +559,6 @@ body {
 /* footer */
 
 /* responsive
-
-media querie
-min-width >ancho minimo
-max width > ancho maximo de la pantalla/dispositivo 
-
-
-medidas relativas
-rem -- es una medida estandar que se multiplica 
-y toma de base el tmaño minimmo de la letra del
-dispositivo ( 32- 1 REM = 32PX) ( 12PX 1 rem = 12PX)
-
-EM -- toma de mase el tamaño minimo de la M del dispositivo
-PORCENTAJES -- Son las mas faciles, menos recomendadas
-1 rem es entre 12 px - 16 px
-cambiar width % por vw view width
-cambiar height % por vh view height
-grid usar fr no px
-*/
 
 /* tablet */
 @media (min-width: 541px) and (max-width: 720px) {
