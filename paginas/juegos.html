@@ -13,88 +13,182 @@
 </head>
 <body>
     <header>
-        <a class="header_a" href="../index.html" ><h1 class="h1_header">GAMERSPORT</h1></a> 
-            <nav class="nav_header">   
-                <ul class="ul_nav">
-                    <li><a class="buton" href="../index.html">Inicio</a></li>
-                    <li><a class="buton" href="juegos.html">Juegos</a></li>
-                    <li><a class="buton" href="inscripciones.html">Inscripciones</a></li>
-                    <li><a class="buton" href="tienda.html">Tienda</a></li>
-                    <li><a class="buton" href="consultas.html">Consultas</a></li>
-                </ul>
-                <a class="img-header" href="../index.html"><img src="../recursos/pluma.png" alt="logo imagen"></a>
-            </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <a class="header__img" href="../index.html">
+                    <img src="../recursos/pluma.png" alt="logo imagen">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="juegos.html">Juegos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="inscripciones.html">Inscripciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="consultas.html">Consultas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <div>
-            <h2 class="heading">JUEGOS</h2>
-        </div>
-        <section class="secciones_juegos">
-            <div class="juegos_para_competir">
-                <h3 class="h3_juegos">League of legends</h3>
-                <img class="imagen_tamaño" src="../recursos/league-of-legends.jpg" alt="lol imagen">
-                <p>Sumergete en la grieta del invocador con tu equipo para derrotar a tus rivales. Necesitaras un jungla, soporte, adc, mid y top para poder conquistar este torneo.¿Qué estas esperando?</p>
-            </div>
-            <div class="juegos_para_competir">
-                <h3 class="h3_juegos">Counter Strike Global Offensive</h3>
-                <img class="imagen_tamaño" src="../recursos/csgo.jpg" alt="csgo imagen">
-                <p>El juego consiste en dos equipos, los Terroristas y los Antiterroristas. El bando Terrorista tiene que plantar y defender una bomba mientras los Antiterroristas defender las zonas de la bomba y su posterior desactivación.</p>
-            </div>
-            <div class="juegos_para_competir">
-                <h3 class="h3_juegos">Battlefield</h3>
-                <img class="imagen_tamaño" src="../recursos/battlefield.jpg" alt="battlefield imagen">
-                <p>Battlefield es un shooter RPG, el cual te sitúa en un campo de batalla ambientado en una guerra, en el cual tendras que tomar control de diferentes dominio contando con la ayuda de tu ejercito.</p>
-            </div>
-            <div class="juegos_para_competir">
-                <h3 class="h3_juegos">Call Of Duty</h3>
-                <img class="imagen_tamaño" src="../recursos/cod.png" alt="cod imagen">
-                <p>Call of duty es un juego FPS que se basa en un modo 4 vs 4, pero tambien hay otras vertientes cn otros modos y clases las cuales le daran su complejidad a las partidas.</p>
-            </div>
-            <div class="juegos_para_competir">
-                <h3 class="h3_juegos">Free Fire</h3>
-                <img class="imagen_tamaño" src="../recursos/free_fire.jpg" alt="freefire img">
-                <p>Free Fire Battlegrounds es un videojuego battle royale, en el cual 50 jugadores disputaran sus habilidades para poder ser el ulrimo sobreviviente y ganar la partida. Existen variables de solo, duos y squads. </p>
-            </div>
-            <div class="juegos_para_competir">
-                <h3 class="h3_juegos">Mobile Legends:</h3>
-                <img class="imagen_tamaño" src="../recursos/mobile_legends.jpg" alt="mobile legends img">
-                <p>Este MMO es el mas famoso para plataformas mobiles, el cual tiene un estilo muy similar a lanzamientos taquilleros como League of Legends, con la diferenvia que sumerge a otra comunidad a este maravilloso juego.</p>
-            </div>
-            <div class="juegos_para_competir">
-                <h3 class="h3_juegos">Rainbow Six: Seige</h3>
-                <img class="imagen_tamaño" src="../recursos/rainbow_six.jpg" alt="rainbow sig img">
-                <p>El titulo pone mucho énfasis en la cooperación entre los jugadores. Cada jugador asume el control de un atacante o un defensor, como rescatar a un rehén, desactivar una bomba y tomar el control de un objetivo dentro de una habitación.</p>
+        <h2 class="heading">JUEGOS</h2>
+        <section class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4 m-4">
+                <div class="col">
+                    <div class="card__div card h-100 bg- border-dark">
+                        <img src="../recursos/league-of-legends.jpg" class="card-img-top" alt="lol img">
+                        <div class="card-body">
+                            <h5 class="card-title">League of Legends</h5>
+                            <p class="card-text">Sumergete en la grieta del invocador con tu equipo para derrotar a tus rivales. Necesitaras un jungla, soporte, adc, mid y top para poder conquistar este torneo.¿Qué estas esperando?</p>
+                        </div>
+                        <a href="../paginas/inscripciones.html" class="btn btn-success">¡Inscribete aquí!</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card__div card h-100 border-dark">
+                        <img src="../recursos/csgo.jpg" class="card-img-top" alt="csgo img">
+                        <div class="card-body">
+                            <h5 class="card-title">Counter Strike Global Offensive</h5>
+                            <p class="card-text">El juego consiste en dos equipos, los Terroristas y los Antiterroristas. El bando Terrorista tiene que plantar y defender una bomba mientras los Antiterroristas defender las zonas de la bomba y su posterior desactivación.</p>
+                        </div>
+                        <a href="../paginas/inscripciones.html" class="btn btn-success">¡Inscribete aquí!</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card__div card h-100 border-dark">
+                        <img src="../recursos/battlefield.jpg" class="card-img-top" alt="battlefield img">
+                        <div class="card-body">
+                            <h5 class="card-title">Battlefield</h5>
+                            <p class="card-text">Battlefield es un shooter RPG, el cual te sitúa en un campo de batalla ambientado en una guerra, en el cual tendras que tomar control de diferentes dominio contando con la ayuda de tu ejercito.</p>
+                        </div>
+                        <a href="../paginas/inscripciones.html" class="btn btn-success">¡Inscribete aquí!</a>
+                    </div>    
+                </div>
+                <div class="col">
+                    <div class="card__div card h-100 border-dark">
+                        <img src="../recursos/cod.png" class="card-img-top" alt="cod img">
+                        <div class="card-body">
+                            <h5 class="card-title">Call Of Duty</h5>
+                            <p class="card-text">Call of duty es un juego FPS que se basa en un modo 4 vs 4, pero tambien hay otras vertientes cn otros modos y clases las cuales le daran su complejidad a las partidas.</p>
+                        </div>
+                        <a href="../paginas/inscripciones.html" class="btn btn-success">¡Inscribete aquí!</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card__div card h-100 border-dark">
+                        <img src="../recursos/free_fire.jpg" class="card-img-top" alt="free-fire img">
+                        <div class="card-body">
+                            <h5 class="card-title">Free Fire</h5>
+                            <p class="card-text">Free Fire Battlegrounds es un videojuego battle royale, en el cual 50 jugadores disputaran sus habilidades para poder ser el ulrimo sobreviviente y ganar la partida. Existen variables de solo, duos y squads.</p>
+                        </div>
+                        <a href="../paginas/inscripciones.html" class="btn btn-success">¡Inscribete aquí!</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card__div card h-100 border-dark">
+                        <img src="../recursos/mobile_legends.jpg" class="card-img-top" alt="mobile legends img">
+                        <div class="card-body">
+                            <h5 class="card-title">Mobile Legends</h5>
+                            <p class="card-text">Este MMO es el mas famoso para plataformas mobiles, el cual tiene un estilo muy similar a lanzamientos taquilleros como League of Legends, con la diferenvia que sumerge a otra comunidad a este maravilloso juego.</p>
+                        </div>
+                        <a href="../paginas/inscripciones.html" class="btn btn-success">¡Inscribete aquí!</a>
+                    </div>
+                </div>    
+                <div class="col">
+                    <div class="card__div card h-100 border-dark">
+                        <img src="../recursos/rainbow_six.jpg" class="card-img-top" alt="rainbow six img">
+                        <div class="card-body">
+                            <h5 class="card-title">Rainbow Six: Seige</h5>
+                            <p class="card-text">El titulo pone mucho énfasis en la cooperación entre los jugadores. Cada jugador asume el control de un atacante o un defensor, como rescatar a un rehén, desactivar una bomba y tomar el control de un objetivo dentro de una habitación.</p>
+                        </div>
+                        <a href="../paginas/inscripciones.html" class="btn btn-success">¡Inscribete aquí!</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer class="footer_class">
-        <ul class="ul_class">
-            <li>
-                <p class="p_ul">Contactenos en nuestras redes:</p>
-            </li>
-            <li class="img_footer">
-                <a href="https://twitter.com/ESL">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-            </li>
-            <li class="img_footer">
-                <a href="https://www.instagram.com/eslgaming/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </li>
-            <li class="img_footer">
-                <a href="https://www.facebook.com/ESL/" target="_blank">
-                    <i class="fa-brands fa-facebook-f "></i>
-                </a>
-            </li>
-            <li class="img_footer">
-                <a href="tel:3514-7285">
-                    <i class="fa-solid fa-phone"></i>
-                </a>
-            </li>
-        </ul>
-        <p class="p_footer">Gamersports © | 2022 | Todos los derechos reservados</p>
-</footer>
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Sobre nosotros:</h5>
+                    <p> Somos una empresa dedicada al gaming de alta competitividad creada en 2011. Nuestro objetivo es que GAMERSPORTS gane prestigio  nivel de torneos, asi expandiendonos hacia mayores locaciones para asi poder brindarle a la mayor cantidad de personas posibles la oportunidad de competir en nuestros torneos.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Ediciones anteriores:</h5>
+                    <p>
+                        Tokio 2015 | LoL edition
+                    </p>
+                    <p>
+                        Escocia 2016 | C.S.G.O edition
+                    </p>
+                    <p>
+                        Nueva Zelanda 2017 | COD edition
+                    </p>
+                    <p>
+                        Medellin 2018 | Free Fire edition
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning"> Información relevante:</h5>
+                    <p>
+                        <i class="fas fa-home mb-4"></i> Superi 5764(Argentina)
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mb-4"></i>  gamesports@gmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mb-4"></i>  +54 9 11 3514-7285
+                    </p>
+                </div>
+               
+                <hr class="mb-4">
+                <div class="row align-items-center">
+                    <div class="col-md-7 col-lg-8">
+                        <p>Copyright © | 2022 | Todos los derechos reservados por:
+                            <a style="text-decoration:none;" href="../index.html">
+                                <strong class="text-warning">Gamersports</strong>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-lg-4">
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item boton__footer">
+                                    <a class="btn-floating btn-sm text-white" href="https://twitter.com/ESL">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item boton__footer">
+                                    <a class="btn-floating btn-sm text-white" href="https://www.instagram.com/eslgaming/" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item boton__footer">
+                                    <a class="btn-floating btn-sm text-white" href="https://www.facebook.com/ESL/" target="_blank">
+                                        <i class="fa-brands fa-facebook-f "></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

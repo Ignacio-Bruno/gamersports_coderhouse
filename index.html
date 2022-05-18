@@ -14,76 +14,159 @@
 </head>
 <body>
     <header>
-        <a class="header_a" href="index.html" ><h1 class="h1_header">GAMERSPORT</h1></a> 
-            <nav class="nav_header">   
-                <ul class="ul_nav">
-                    <li><a class="buton" href="index.html">Inicio</a></li>
-                    <li><a class="buton" href="paginas/juegos.html">Juegos</a></li>
-                    <li><a class="buton" href="paginas/inscripciones.html">Inscripciones</a></li>
-                    <li><a class="buton" href="paginas/tienda.html">Tienda</a></li>
-                    <li><a class="buton" href="paginas/consultas.html">Consultas</a></li>
-                </ul>
-                <a class="img-header" href="index.html"><img src="recursos/pluma.png" alt="logo imagen"></a>
-            </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <a class="header__img" href="index.html">
+                    <img src="recursos/pluma.png " alt="logo imagen">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active nav_head" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="paginas/juegos.html">Juegos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="paginas/inscripciones.html">Inscripciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="paginas/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="paginas/consultas.html">Consultas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <div>
-            <h2 class="heading">BIENVENIDOS A GAMERSPORT</h2>
-        </div>
-        <section class="section_index">
-            <div>
-                <p class="p_index">GS  (gamersport) es una plataforma de torneos que te ofrece más de 1.000 torneos gratuitos en más de 40 partidas cada mes. Los torneos están abiertos a todos y disponibles en America del sur, America del norte, Oceanía, europa y Asia. Los eventos suelen seren sus primeros enfrentamientos jugados virtualmente hasta llegar a las semifinales que se arman eventos en los que habra una gran magnitud de espectadores y se visualizara también en vivo en nuestra plataforma de twitch. Aparte de todo el espectaculo que se ofrece y la magnitud de repercucion que reciben ya sean los equipos, competidores, etc.. se ofrecen premios a los respectivos ganadores de cada torneo. </p>
-            </div>
-            <div>
-                <img class="img_gamersport animate__animated animate__flash"  src="recursos/pluma_big.png" alt="LOGO">
+        <h2 class="heading">BIENVENIDOS A GAMERSPORT</h2>
+        <section class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="recursos/carrousel-1.jpg" class=" w-100" alt="torneo en vivo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="recursos/carrousel-2.png" class=" w-100" alt="torneo en vivo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="recursos/crrousel-3.jpg" class=" w-100" alt="torneo en vivo">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
-        <section class="section_index">
+        <section class="section__container">
+            <div>
+                <p class="p__div p__selector">GS (gamersport) es una plataforma de torneos que te ofrece más de 1.000 torneos gratuitos en más de 40 partidas cada mes. Los torneos están abiertos a todos y disponibles en America del sur, America del norte, Oceanía, europa y Asia. Los eventos suelen seren sus primeros enfrentamientos jugados virtualmente hasta llegar a las semifinales que se arman eventos en los que habra una gran magnitud de espectadores y se visualizara también en vivo en nuestra plataforma de twitch. Aparte de todo el espectaculo que se ofrece y la magnitud de repercucion que reciben ya sean los equipos, competidores, etc.. se ofrecen premios a los respectivos ganadores de cada torneo. </p>
+            </div>
+            <div>
+                <img class="img__gamersport animate__animated animate__flash" src="recursos/pluma_big.png" alt="logo">
+            </div>
+        </section>
+        <section class="section__container">
             <div>
                 <h3 class="subheading">ULTIMAS NOTICIAS</h3>
-                <p class="p_index" data-aos="zoom-in">La segunda edición del torneo más importante de CS:GO latino llegó a su fin. 9z Team e Isurus se midieron en la Gran Final, jugada de forma online debido a un caso de COVID en el Tiburón, al mejor de 5 mapas. La Violeta se consagró campeón al ganar la serie 3-1 (Nuke 16-9; Dust II 16-13; Mirage 10-16 y Ancient 22-19). Los mapas vetados fueron Vertigo por parte del Tiburón y Overpass por la Violeta. Nuke, primera elección de 9z, abrió la serie. Si bien Isurus se quedó con la primera ronda de pistolas, los rivales supieron ganar el forzado y las rondas que le siguieron para estar 5-1. Luego, el Tiburón pudo empatar el marcador, pero 9z volvió a adelantarse para quedarse con la primera mitad, desde el bando Terrorista, por 8-7. En el cambio de lados, la Violeta ganó la ronda de pistolas, lo que les dio el envión para estirar la ventaja a 12-7. Si bien Isurus pudo recortar un par de rondas más, 9z se quedó con el primer punto por 16-9. </p>
+                <p class="p__div p__selector" data-aos="zoom-in">La segunda edición del torneo más importante de CS:GO latino llegó a su fin. 9z Team e Isurus se midieron en la Gran Final, jugada de forma online debido a un caso de COVID en el Tiburón, al mejor de 5 mapas. La Violeta se consagró campeón al ganar la serie 3-1 (Nuke 16-9; Dust II 16-13; Mirage 10-16 y Ancient 22-19). Los mapas vetados fueron Vertigo por parte del Tiburón y Overpass por la Violeta. Nuke, primera elección de 9z, abrió la serie. Si bien Isurus se quedó con la primera ronda de pistolas, los rivales supieron ganar el forzado y las rondas que le siguieron para estar 5-1. Luego, el Tiburón pudo empatar el marcador, pero 9z volvió a adelantarse para quedarse con la primera mitad, desde el bando Terrorista, por 8-7. En el cambio de lados, la Violeta ganó la ronda de pistolas, lo que les dio el envión para estirar la ventaja a 12-7. Si bien Isurus pudo recortar un par de rondas más, 9z se quedó con el primer punto por 16-9. </p>
             </div>
-            <div class="div_index">
-                <iframe class="video_index" data-aos="fade-up"
-                data-aos-anchor-placement="top-center" src="https://www.youtube.com/embed/AuU0rRFqpi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+            <div class="section__div">
+                <iframe class="div__video" data-aos="fade-up" data-aos-anchor-placement="top-center" src="https://www.youtube.com/embed/AuU0rRFqpi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
             </div>
         </section>
         <section>        
-            <div class="div_indexfondo"> 
-                <h3 class="subheading">JUGADAS DESTACADAS:</h3>         
-                <iframe class="video_index" data-aos="fade-up"
-                data-aos-anchor-placement="top-center"  src="https://www.youtube.com/embed/I788yqRU1Oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+            <div class="section__div--align"> 
+                <h3 class="subheading">JUGADAS DESTACADAS</h3>         
+                <iframe class="div__video" data-aos="fade-up" data-aos-anchor-placement="top-center"  src="https://www.youtube.com/embed/I788yqRU1Oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
             </div>
         </section>
     </main>
-    <footer class="footer_class">
-            <ul class="ul_class">
-                <li>
-                    <p class="p_ul">Contactenos en nuestras redes:</p>
-                </li>
-                <li class="img_footer">
-                    <a href="https://twitter.com/ESL">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="img_footer">
-                    <a href="https://www.instagram.com/eslgaming/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="img_footer">
-                    <a href="https://www.facebook.com/ESL/" target="_blank">
-                        <i class="fa-brands fa-facebook-f "></i>
-                    </a>
-                </li>
-                <li class="img_footer">
-                    <a href="tel:3514-7285">
-                        <i class="fa-solid fa-phone"></i>
-                    </a>
-                </li>
-            </ul>
-            <p class="p_footer">Gamersports © | 2022 | Todos los derechos reservados</p>
-    </footer>   
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Sobre nosotros:</h5>
+                    <p> Somos una empresa dedicada al gaming de alta competitividad creada en 2011. Nuestro objetivo es que GAMERSPORTS gane prestigio  nivel de torneos, asi expandiendonos hacia mayores locaciones para asi poder brindarle a la mayor cantidad de personas posibles la oportunidad de competir en nuestros torneos.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Ediciones anteriores:</h5>
+                    <p>
+                        Tokio 2015 | LoL edition
+                    </p>
+                    <p>
+                        Escocia 2016 | C.S.G.O edition
+                    </p>
+                    <p>
+                        Nueva Zelanda 2017 | COD edition
+                    </p>
+                    <p>
+                        Medellin 2018 | Free Fire edition
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning"> Información relevante:</h5>
+                    <p>
+                        <i class="fas fa-home mb-4"></i> Superi 5764(Argentina)
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mb-4"></i>  gamesports@gmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mb-4"></i>  +54 9 11 3514-7285
+                    </p>
+                </div>
+               
+                <hr class="mb-4">
+                <div class="row align-items-center">
+                    <div class="col-md-7 col-lg-8">
+                        <p>Copyright © | 2022 | Todos los derechos reservados por:
+                            <a style="text-decoration:none;" href="index.html">
+                                <strong class="text-warning">Gamersports</strong>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-lg-4">
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item boton__footer">
+                                    <a class="btn-floating btn-sm text-white" href="https://twitter.com/ESL">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item boton__footer">
+                                    <a class="btn-floating btn-sm text-white" href="https://www.instagram.com/eslgaming/" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item boton__footer">
+                                    <a class="btn-floating btn-sm text-white" href="https://www.facebook.com/ESL/" target="_blank">
+                                        <i class="fa-brands fa-facebook-f "></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>  
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

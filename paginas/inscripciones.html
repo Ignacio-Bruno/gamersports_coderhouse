@@ -13,114 +13,219 @@
 </head>
 <body>
     <header>
-        <a class="header_a" href="../index.html" ><h1 class="h1_header">GAMERSPORT</h1></a> 
-            <nav class="nav_header">   
-                <ul class="ul_nav">
-                    <li><a class="buton" href="../index.html">Inicio</a></li>
-                    <li><a class="buton" href="juegos.html">Juegos </a></li>
-                    <li><a class="buton" href="inscripciones.html">Inscripciones</a></li>
-                    <li><a class="buton" href="tienda.html">Tienda</a></li>
-                    <li><a class="buton" href="consultas.html">Consultas</a></li>
-                </ul>
-                <a class="img-header" href="../index.html"><img src="../recursos/pluma.png" alt="logo imagen"></a>
-            </nav>
-    </header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <a class="header__img" href="../index.html">
+                    <img src="../recursos/pluma.png" alt="logo imagen">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="juegos.html">Juegos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="inscripciones.html">Inscripciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="consultas.html">Consultas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>   
     <main>
-        <section>
-            <h2 class="heading">INSCRIBITE</h2>
-            <form method="post" class="form_insc" >
-                <div class="div_inscripciones">
-                    <label for="juegos">¿En que juego vas a competir?</label>
-                    <select name="juegos" id="juegos">
-                        <option value="league">League Of Legends</option>
-                        <option value="csgo">Counter strike global offensive</option>
-                        <option value="battlefield">Battlefield</option>
-                        <option value="cod">Call Of Duty</option>
-                    </select>
+        <h2 class="heading">INSCRIBITE</h2>
+        <section class="m-2">
+            <form class="container bg-dark border p-3">
+                <div class="mb-3">
+                    <div class="row g-2">
+                        <div class=" col-md">
+                            <select class="form-select" aria-label="seleccion juegos">
+                                <option selected>Juego en el que va a competir:</option>
+                                <option value="na">League Of Legends</option>
+                                <option value="sa">C.S.G.O</option>
+                                <option value="eu">Battlefield</option>
+                                <option value="asia">Free-fire</option>
+                                <option value="oceania">Rainbow Six</option>
+                                <option value="oceania">Mobile Legends</option>
+                            </select>
+                        </div>
+                        <div class="col-md">
+                            <select class="form-select" aria-label="regiones">
+                                <option selected>¿De qué región eres?</option>
+                                <option value="na">America del Norte</option>
+                                <option value="sa">America del sur</option>
+                                <option value="eu">Europa</option>
+                                <option value="asia">Asia</option>
+                                <option value="oceania">Oceanía</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-                <div class="div_inscripciones">
-                    <label for="region">¿De que region eres?</label><!-- le puse una p para q quede orientado horizontalmente aunque no se si esta bien hecho semantiamente, lo dejare asi hasta ver css y arreglarlo -->
-                    <select name="region" id="region">
-                        <option value="na">America del Norte</option>
-                        <option value="sa">America del Sur</option>
-                         <option value="eu">Europa</option>
-                        <option value="oceania">Oceanía</option>
-                        <option value="asia">Asia</option>
-                    </select>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Nombre y apellido</span>
+                    <input type="text" aria-label="nombre" class="form-control" required>
+                    <input type="text" aria-label="apellido" class="form-control"required>
                 </div>
-                <div class="div_inscripciones">
-                    <p>Datos necesarios para inscribirse:</p>
-                    <input type="text" placeholder="Nombe y Apellido" required>
-                    <input type="number" placeholder="DNI N°" required>
-                    <input type="email" placeholder="ejemplo@gmail.com" required>
-                    <p><button type="submit">Envíar inscripción</button></p><!-- le puse una p para q quede orientado horizontalmente aunque no se si esta bien hecho semantiamente, lo dejare asi hasta ver css y arreglarlo -->
-                </div>   
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="dni">DNI N°</span>
+                    <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="dni" placeholder="D.N.I" required>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="email">Correo electronico</span>
+                    <input type="email" class="form-control" aria-label="email" placeholder="Ejemplo@gmail.com" aria-describedby="dni" required>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="mayor de edad" required>
+                    <label class="form-check-label text-white" for="mayor de edad">Eres mayor de edad</label>
+                </div>
+                <div class="mb-3">
+                    <label for="customRange1" class="form-label text-white">Que tan experimentado eres en videojuegos:</label>
+                    <input type="range" class="form-range" id="customRange1" required>
+                </div>
+                <p><button class="btn btn-success" type="submit">Envíar inscripción</button></p>
             </form>
         </section>
-            <div>
-                <h3 class="subheading">JUGADORES DESTACADOS</h3>
-            </div>
-        <section class="grid_ganadores">    
-            <div class="ganador_a">
-                <img class="imagen_grid" src="../recursos/BDD_img.png" alt="BDD imagen">
-                    <p class="p_lol_grid" data-aos="zoom-in-up">BDD</p>
-                    <p class="p_vlol" data-aos="zoom-in-up">"Gwak Bo-seong"</p>
-            </div>
-            <div class="ganador_b">
-                <img class="imagen_grid" src="../recursos/PraY_img.png" alt=" PraY imaggen">              
-                <p class="p_lol_grid" data-aos="zoom-in-up">PraY</p>
-                <p class="p_vlol" data-aos="zoom-in-up">"Kim Jong-in"</p>
-            </div>
-            <div class="ganador_c">
-                <img class="imagen_grid" src="../recursos/PerkZ_img.png" alt="PerkZ imagen">
-                <p class="p_lol_grid" data-aos="zoom-in-up">PerkZ</p>
-                <p class="p_vlol" data-aos="zoom-in-up">"Luka Perkovic"</p>
-            </div>
-            <div class="ganador_d">
-                <img class="imagen_grid" src="../recursos/Bjergsen_img.png" alt="Bjergsen imagen">
-                <p class="p_lol_grid" data-aos="zoom-in-up">Bjergsen</p>
-                <p class="p_vlol" data-aos="zoom-in-up">"Soren Bjerg"</p>
-            </div>
-            <div class="ganador_e">
-                <img class="imagen_grid" src="../recursos/faker_img.png" alt="Faker imagen">
-                <p class="p_lol_grid" data-aos="zoom-in-up">Faker</p>
-                <p class="p_vlol" data-aos="zoom-in-up">"Lee Sang-hyeok"</p>
-            </div>
-            <div class="ganador_f">
-                <img class="imagen_grid" src="../recursos/Zven_img.png" alt="Zven imagen">
-                <p class="p_lol_grid" data-aos="zoom-in-up">Zven</p>
-                <p class="p_vlol" data-aos="zoom-in-up">"Jesper Svenningsen"</p>
+        <h3 class="subheading">JUGADORES DESTACADOS</h3>
+        <section class="container p-3">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                <div class="col mb-3">
+                    <div class="card grid__imagen border-dark" data-aos="zoom-in-up">
+                        <img src="../recursos/BDD_img.png" alt="BDD imagen">
+                        <div class="mb-3">
+                            <p class=" text-center p__text"> BDD</p>
+                            <p class=" text-center text-white"> "Gwak Bo-Seong"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card grid__imagen border-dark" data-aos="zoom-in-up">
+                        <img src="../recursos/faker_img.png" alt="faker imagen">
+                        <div class="mb-3">
+                            <p class=" text-center p__text"> Faker</p>
+                            <p class=" text-center text-white"> "Lee Sang-hyeok"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card grid__imagen border-dark" data-aos="zoom-in-up">
+                        <img src="../recursos/Zven_img.png"  alt="Zven imagen">
+                        <div class="mb-3">
+                            <p class=" text-center p__text"> Zven</p>
+                            <p class=" text-center text-white"> "Jesper Svenningsen"</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col mb-3">
+                    <div class="card grid__imagen border-dark" data-aos="zoom-in-up">
+                        <img src="../recursos/Bjergsen_img.png" alt="Bjergsen imagen">
+                        <div class="mb-3">
+                            <p class=" text-center p__text"> Bjergsen</p>
+                            <p class="text-center text-white"> "Soren Bjerg"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card grid__imagen border-dark" data-aos="zoom-in-up">
+                        <img src="../recursos/PraY_img.png" alt="Pray_ imagen">
+                        <div class="mb-3">
+                            <p class=" text-center p__text"> PraY</p>
+                            <p class="text-center text-white"> "Kim Jong-ing"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card grid__imagen border-dark" data-aos="zoom-in-up">
+                        <img src="../recursos/PerkZ_img.png" alt="Perkz_ imagen">
+                        <div class="mb-3">
+                            <p class=" text-center p__text"> PerkZ</p>
+                            <p class=" text-center text-white"> "Luka Perkovic"</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer class="footer_class">
-        <ul class="ul_class">
-            <li>
-                <p class="p_ul">Contactenos en nuestras redes:</p>
-            </li>
-            <li class="img_footer">
-                <a href="https://twitter.com/ESL">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-            </li>
-            <li class="img_footer">
-                <a href="https://www.instagram.com/eslgaming/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </li>
-            <li class="img_footer">
-                <a href="https://www.facebook.com/ESL/" target="_blank">
-                    <i class="fa-brands fa-facebook-f "></i>
-                </a>
-            </li>
-            <li class="img_footer">
-                <a href="tel:3514-7285">
-                    <i class="fa-solid fa-phone"></i>
-                </a>
-            </li>
-        </ul>
-        <p class="p_footer">Gamersports © | 2022 | Todos los derechos reservados</p>
-</footer>
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Sobre nosotros:</h5>
+                    <p> Somos una empresa dedicada al gaming de alta competitividad creada en 2011. Nuestro objetivo es que GAMERSPORTS gane prestigio  nivel de torneos, asi expandiendonos hacia mayores locaciones para asi poder brindarle a la mayor cantidad de personas posibles la oportunidad de competir en nuestros torneos.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Ediciones anteriores:</h5>
+                    <p>
+                        Tokio 2015 | LoL edition
+                    </p>
+                    <p>
+                        Escocia 2016 | C.S.G.O edition
+                    </p>
+                    <p>
+                        Nueva Zelanda 2017 | COD edition
+                    </p>
+                    <p>
+                        Medellin 2018 | Free Fire edition
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning"> Información relevante:</h5>
+                    <p>
+                        <i class="fas fa-home mb-4"></i> Superi 5764(Argentina)
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mb-4"></i>  gamesports@gmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mb-4"></i>  +54 9 11 3514-7285
+                    </p>
+                </div>
+               
+                <hr class="mb-4">
+                <div class="row align-items-center">
+                    <div class="col-md-7 col-lg-8">
+                        <p>Copyright © | 2022 | Todos los derechos reservados por:
+                            <a style="text-decoration:none;" href="../index.html">
+                                <strong class="text-warning">Gamersports</strong>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-lg-4">
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item boton__footer">
+                                    <a class="btn-floating btn-sm text-white" href="https://twitter.com/ESL">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item boton__footer">
+                                    <a class="btn-floating btn-sm text-white" href="https://www.instagram.com/eslgaming/" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item boton__footer">
+                                    <a class="btn-floating btn-sm text-white" href="https://www.facebook.com/ESL/" target="_blank">
+                                        <i class="fa-brands fa-facebook-f "></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

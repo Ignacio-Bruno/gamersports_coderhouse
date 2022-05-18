@@ -13,74 +13,144 @@
 </head>
 <body>
     <header>
-        <a class="header_a" href="../index.html" ><h1 class="h1_header">GAMERSPORT</h1></a> 
-            <nav class="nav_header">   
-                <ul class="ul_nav">
-                    <li><a class="buton" href="../index.html">Inicio</a></li>
-                    <li><a class="buton" href="juegos.html">Juegos</a></li>
-                    <li><a class="buton" href="inscripciones.html">Inscripciones</a></li>
-                    <li><a class="buton" href="tienda.html">Tienda</a></li>
-                    <li><a class="buton" href="consultas.html">Consultas</a></li>
-                </ul>
-                <a class="img-header" href="../index.html"><img src="../recursos/pluma.png" alt="logo imagen"></a>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+                <div class="container-fluid">
+                    <a class="header__img" href="../index.html">
+                        <img src="../recursos/pluma.png" alt="logo imagen">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="juegos.html">Juegos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="inscripciones.html">Inscripciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="tienda.html">Tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="consultas.html">Consultas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </nav>
     </header>
-    <main class="main-content">
-        <section class="form_consultas">
-            <div class="div_consultas">
-                <h2>CONSULTAS</h2>
-                <p>¿Tiene dudas o consultas?</p>
-                <p class="p_consultas">Por favor, déjenos su mensaje y le responderemos a la brevedad.</p>
+    <main>
+        <section class="container border mt-4 mb-4 mx-auto bg-dark">
+            <div class="text-center mt-3">
+                <h2 class="text-white">CONSULTAS</h2>
+                <p class="text-white">¿Tiene dudas o consultas?</p>
+                <p class="text-white">Por favor, déjenos su mensaje y le responderemos a la brevedad.</p>
             </div>
-            <div>
-            <form class='form_consultas_work' action="POST">
-                        <!-- comente los labels porque estoy en la duda si sería redundante ya que use placeholders. -->
-                        <!-- <label for="Motivo de consulta">Motivo de consulta</label>-->
-                        <input class="input_form" type="text" placeholder="Motivo de consulta" required>
-                        <!-- <label for="Nombre y apellido">Nombre y Apellido</label> -->
-                        <input class="input_form" type="text" placeholder="Nombre y Apellido" required>
-                        <!-- <label for="DNI">DNI N°</label> -->
-                        <input class="input_form" type="number" placeholder="DNI N°" required>
-                        <!-- <label for="ejemplo@gmail.com">Email</label> -->
-                        <input class="input_form" type="email" placeholder="ejemplo@gmail.com" required>
-                        <!-- <label for="celular">N° celular</label> -->
-                        <input class="input_form" type="tel" placeholder="celular" required>
-                        <!-- <label for="consulta">Dejenos su consulta:</label> -->
-                        <textarea class="input_form" name="Dejenos su consulta" placeholder="Dejenos su consulta" cols="30" rows="10"></textarea>
-                        <button class="but_consultas" type="submit">Envíar</button>
-                        <input class="input_consultas" type="reset" value="Borrar">
+            <form class="card-body" action="post">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre y Apellido"  required>
+                    <label for="floatingInputGrid">Nombre y Apellido</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInputGrid" placeholder="Motivo de consulta" required>
+                    <label for="floatingInput">Motivo de consulta</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="DNI" required>
+                    <label for="floatingInput">DNI N°</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInputGrid" placeholder="ejemplo@gmail.com" required>
+                    <label for="floatingInputGrid">Correo electronico</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="N° Celular" required>
+                    <label for="floatingInput">N° Celular</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Deje su consulta aqui" id="floatingTextarea" style="height: 100px;" required></textarea>
+                    <label for="floatingTextarea">Dejenos su consulta</label>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-success m-4 boton--width" type="submit">Envíar</button>
+                    <input class="btn btn-danger m-4 boton--width" type="reset" value="Borrar">
+                </div>
             </form>
-            </div>
         </section>
     </main>
-    <footer class="footer_class">
-        <ul class="ul_class">
-            <li>
-                <p class="p_ul">Contactenos en nuestras redes:</p>
-            </li>
-            <li class="img_footer">
-                <a href="https://twitter.com/ESL">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-            </li>
-            <li class="img_footer">
-                <a href="https://www.instagram.com/eslgaming/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </li>
-            <li class="img_footer">
-                <a href="https://www.facebook.com/ESL/" target="_blank">
-                    <i class="fa-brands fa-facebook-f "></i>
-                </a>
-            </li>
-            <li class="img_footer">
-                <a href="tel:3514-7285">
-                    <i class="fa-solid fa-phone"></i>
-                </a>
-            </li>
-        </ul>
-        <p class="p_footer">Gamersports © | 2022 | Todos los derechos reservados</p>
-</footer>
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Sobre nosotros:</h5>
+                    <p> Somos una empresa dedicada al gaming de alta competitividad creada en 2011. Nuestro objetivo es que GAMERSPORTS gane prestigio  nivel de torneos, asi expandiendonos hacia mayores locaciones para asi poder brindarle a la mayor cantidad de personas posibles la oportunidad de competir en nuestros torneos.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Ediciones anteriores:</h5>
+                    <p>
+                        Tokio 2015 | LoL edition
+                    </p>
+                    <p>
+                        Escocia 2016 | C.S.G.O edition
+                    </p>
+                    <p>
+                        Nueva Zelanda 2017 | COD edition
+                    </p>
+                    <p>
+                        Medellin 2018 | Free Fire edition
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning"> Información relevante:</h5>
+                    <p>
+                        <i class="fas fa-home mb-4"></i> Superi 5764(Argentina)
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mb-4"></i>  gamesports@gmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mb-4"></i>  +54 9 11 3514-7285
+                    </p>
+                </div>
+               
+                <hr class="mb-4">
+                <div class="row align-items-center">
+                    <div class="col-md-7 col-lg-8">
+                        <p>Copyright © | 2022 | Todos los derechos reservados por:
+                            <a class=""  href="../index.html">
+                                <strong class="text-warning">Gamersports</strong>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-lg-4">
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item boton__footer">
+                                    <a class="btn-floating btn-sm text-white" href="https://twitter.com/ESL">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item boton__footer">
+                                    <a class="btn-floating btn-sm text-white" href="https://www.instagram.com/eslgaming/" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item boton__footer">
+                                    <a class="btn-floating btn-sm text-white" href="https://www.facebook.com/ESL/" target="_blank">
+                                        <i class="fa-brands fa-facebook-f "></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
