@@ -1,0 +1,57 @@
+/* tablet */
+@media (min-width: 541px) and (max-width: 720px) {
+    .heading {
+		font-size: 1rem;
+		display: flex;
+        text-align: center;
+	}
+    .section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .section__p{
+            font-size: 1rem;
+            width: 600px;
+        }
+        .section__imagen {
+            width: 20rem;
+            height: 15rem;
+        }
+        .section__video {
+            width: 600px;
+            height: 400px;
+        } 
+    }
+}
+	
+
+/* celular   */
+@media (max-width: 540px) {
+	.heading {
+		font-size: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+        text-align: center;
+	}
+	.subheading{
+		margin: 1rem;
+	}
+    .section{
+        display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+        .section__p{
+            font-size: 0.9rem;
+            width: 400px;
+        }
+        .section__imagen {
+            width: 20rem;
+            height: 15rem;
+        }
+	    .section__video {
+		    width: 400px;
+		    height: 250px;
+        } 
+    }   
+}
