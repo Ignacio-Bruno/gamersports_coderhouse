@@ -110,6 +110,10 @@
 .card__div:hover {
   transform: scale(1.1); }
 
+.card__btn--color {
+  color: #f8f7f7;
+  background-color: rgba(73, 33, 138, 0.795); }
+
 .grid__imagen {
   background-color: rgba(3, 0, 5, 0.274); }
 

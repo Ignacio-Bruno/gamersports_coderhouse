@@ -68,6 +68,10 @@
 	&__div:hover{
 		transform: scale(1.1);
 	}
+	&__btn--color{
+	color: $color-font-principal;
+	background-color: rgba(73, 33, 138, 0.795);
+	}
 }
 .grid{
 	&__imagen{	
