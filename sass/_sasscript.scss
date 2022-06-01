@@ -1,0 +1,16 @@
+/* MAP */
+$juegos:(   key1: "league-of-legends.jpg", 
+            key2: "csgo.jpg",
+            key3: "battlefield.jpg", 
+            key4: "cod.png", 
+            key5: "free_fire.jpg", 
+            key6: "mobile_legends.jpg", 
+            key7: "rainbow_six.jpg",
+        );
+
+/* EACH (obligatorio) */
+@each $key in $juegos {
+    #{$key}-card{
+        background-image: url('../recursos/#{$juegos}');
+    }
+}
