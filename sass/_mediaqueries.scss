@@ -14,12 +14,10 @@
             width: 600px;
         }
         .section__imagen {
-            width: 20rem;
-            height: 15rem;
+            @include width-height(20rem, 15rem);
         }
         .section__video {
-            width: 600px;
-            height: 400px;
+            @include width-height(600px, 400px)
         } 
     }
 }
@@ -46,12 +44,10 @@
             width: 400px;
         }
         .section__imagen {
-            width: 20rem;
-            height: 15rem;
+            @include width-height(20rem, 15rem)
         }
 	    .section__video {
-		    width: 400px;
-		    height: 250px;
+            @include width-height(400px, 250px)
         } 
     }   
 }

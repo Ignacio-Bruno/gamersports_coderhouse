@@ -2,29 +2,6 @@
 /* colors */
 /* fonts */
 /* backgrounds */
-/* MAP */
-/* EACH (obligatorio) */
-key1-card {
-  background-image: url("../recursos/league-of-legends.jpg"); }
-
-key2-card {
-  background-image: url("../recursos/csgo.jpg"); }
-
-key3-card {
-  background-image: url("../recursos/battlefield.jpg"); }
-
-key4-card {
-  background-image: url("../recursos/cod.png"); }
-
-key5-card {
-  background-image: url("../recursos/free_fire.jpg"); }
-
-key6-card {
-  background-image: url("../recursos/mobile_legends.jpg"); }
-
-key7-card {
-  background-image: url("../recursos/rainbow_six.jpg"); }
-
 .header__img:hover {
   transform: scale(1.2); }
 
@@ -180,5 +157,5 @@ body {
 footer strong {
   color: #c83ffe; }
 
-footer h5 {
+footer h3 {
   color: #c83ffe; }
